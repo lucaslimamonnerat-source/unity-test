@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -313,7 +312,9 @@ GameObject:
   - component: {fileID: 1372548738}
   - component: {fileID: 1372548737}
   - component: {fileID: 1372548736}
+  - component: {fileID: 1372548742}
   - component: {fileID: 1372548740}
+  - component: {fileID: 1372548741}
   m_Layer: 0
   m_Name: Lixeira
   m_TagString: Untagged
@@ -413,6 +414,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 0.1
+--- !u!114 &1372548741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372548735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c20c3c3847e21414da99844522df29ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maximumX: 10
+  fixedY: 8
+  fixedZ: 0
+  timer: 2
+  Lixo: {fileID: 5709607785551571646, guid: a1cd9ee531459d9438cfb3328904bea0, type: 3}
+  MaxPoints: 12312
+  points: 0
+--- !u!114 &1372548742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372548735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7fdb419ff73084fb3aeeb759645650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2123906271
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,5 +638,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5709607785551571635, guid: a1cd9ee531459d9438cfb3328904bea0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a1cd9ee531459d9438cfb3328904bea0, type: 3}
